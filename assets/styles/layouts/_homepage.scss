@@ -1,0 +1,225 @@
+.grid, .interior-content {
+	width:75%;
+	max-width:1800px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
+	margin:2rem auto;
+	position:relative;
+	
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	@include tablet {
+		width:95%;
+		margin:0 auto;
+	}
+
+	@include mobile {
+		width:100%;
+		flex-direction:column;
+	}
+}
+
+.interior-content {
+	margin-bottom:12rem !important;
+
+	@include tablet-landscape {
+		width:95%;
+	}
+
+	@include mobile {
+		margin-bottom:2rem;
+	}
+}
+
+
+.grid-item {
+	width:calc(33.33% - 2rem);
+	margin:1rem;
+	padding:.5rem;
+	z-index:1;
+	background-color:#fff;
+	z-index:100;
+	position:relative;
+	border:solid 2px transparent;
+	transition:all .6s ease-in;
+	border:solid thin $adminBlue;
+
+	@include tablet-landscape {
+		width:calc(50% - 2rem);
+	}
+
+
+	&:hover {
+		border:solid 2px $mainBlue;
+		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		.overlay {
+			opacity:1;
+		}
+	}
+
+	.overlay {
+		position:absolute;
+		opacity:0;
+		top:0;
+		left:0;
+		bottom:0;
+		right:0;
+		text-align:center;
+		@include background-opacity($lightBlue, 0.9);
+
+		.project-name {
+			font-weight:500;
+			color:#fff;
+			padding-top:10%;
+			padding-left:1rem;
+			padding-right:1rem;
+		}
+		.post_type {
+			font-style:italic;
+			color:#fff;
+			text-transform:capitalize;
+		}
+	}
+
+	@include mobile {
+		width:calc(90% - 2rem);
+		margin:1rem 2rem;
+	}
+}
+
+.logo {
+	border:solid 2px transparent;
+	
+	&:hover {
+		border:solid 2px transparent;
+		box-shadow:none;
+	}
+	div {
+		padding:1rem;
+		text-align:center;
+		font-size:1.5rem;
+		font-family:$hairline;
+		border-top:solid thin $pink;
+
+		@include mobile {
+			font-family:$proximaNova;
+			text-transform:uppercase;
+
+			i {
+				display:none;
+			}
+		}
+
+		&:nth-child(2) {
+			background:$lightBlue;
+			border-radius:0 0 10px 10px;
+			color:#fff;
+		}
+	}
+}
+
+/********* logo svg *************/
+
+.name {
+	#jb_logo {
+		g {
+			path {
+				fill:$mainBlue;
+			}
+		}
+	}
+}
+
+/*********** email sign-up **************/
+
+.email-signup__wrapper {
+	padding:2rem 0rem;
+	min-height:500px;
+	position:relative;
+    border-top:solid 3px $lightBlue;
+    display:flex;
+    justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
+
+	@include mobile {
+		padding:2rem 1rem;
+	}
+
+	.overlay {
+		background:$mainBlue;
+		opacity:.95;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+	}
+	.contact-form__wrapper, .about_text, .wave_line {
+		z-index:100;
+		position:relative;
+		margin:2rem auto;
+		color:#fff;
+	}
+	.contact-form__wrapper {
+		input[type="text"], textarea {
+			border:solid thin $pink;
+			height:30px;
+			padding:.25rem;
+			border-radius:4px;
+		}
+		input.medium {
+			width:100% !important;
+		}
+		input[type="submit"] {
+			color:#fff;
+			background:$pink;
+			border:solid thin $pink;
+			padding:.5rem 1rem;
+			border-radius:24px;
+			text-transform:uppercase;
+			letter-spacing:1px;
+			transition:all .3s ease-out;
+
+			&:hover {
+				background:#fff;
+				color:$pink;
+			}
+		}
+
+		@include tablet-landscape {
+			width:70%;
+		}
+	}
+	.about_text {
+		padding:2rem 3rem 2rem 2rem;
+		color:#000;
+		max-width:40%;
+		strong {
+			font-size:1.2rem;
+		}
+		@include background-opacity(#fff, .5)
+	}
+
+	.wave_line {
+		transform:rotate(90deg);
+		width:20%;
+		svg {
+			width:125%;
+			margin-top:-3rem;
+			path {
+				fill:$pink;
+			}
+		}
+	}
+}

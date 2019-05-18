@@ -1,0 +1,68 @@
+// Grid settings
+$enable-flex:           true;
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$pink:  #f7a1c4;
+$logoBlue: #e2641e;
+$mainBlue: #1d6a9e;
+$lightBlue: #84d3ef;
+$gold: #ccb21b;
+$lightYellow: #f4ebab;
+$salmon: #f7ab94;
+$orange: #e2641e;
+$adminBlue: #D9F0EE;
+
+
+// Fonts 
+$hairline:	'Bungee Hairline', 'Open Sans', sans-serif;
+$bungee:	'Bungee', 'Open Sans', sans-serif;
+$inline: 'Bungee Inline', 'Open Sans', sans-serif;
+$shade: 'Bungee Shade', 'Open Sans', sans-serif;
+$outline: 'Bungee Outline', 'Open Sans', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+$proximaNova : 'proxima-nova', sans-serif;
+
+// Mixins
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+// breakpoints
+
+$tablet: "(max-width:768px)";
+$tablet-landscape: "(max-width:1200px)";
+$mobile-phone: "(max-width:600px)";
+$laptop: "(max-width:1400px)";
+
+
+
+@mixin tablet {
+
+	@media #{$tablet} {
+		@content;
+	}
+
+}
+
+@mixin mobile {
+
+	@media #{$mobile-phone} {
+		@content;
+	}
+	
+}
+
+@mixin tablet-landscape {
+	@media #{$tablet-landscape} {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media #{$laptop} {
+		@content;
+	}
+}

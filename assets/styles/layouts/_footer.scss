@@ -1,0 +1,145 @@
+footer {
+	background:$adminBlue;
+	padding:2rem 4rem 4rem 4rem;
+	border-top:solid 3px $pink;
+	position:relative;
+
+	@include mobile {
+		padding:1rem 2rem;
+	}
+
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	.ink_well {
+		width:200px;
+		position:absolute;
+		background:$pink;
+		text-align:center;
+		padding:1rem;
+		border-radius:50%;
+		border:solid 3px $mainBlue;
+		left:0;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+		top:-4rem;
+		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		transition:all .3s ease-out;
+
+		&:hover {
+			transform:rotate(180deg);
+		}
+
+		svg {
+			width:50%;
+
+		}
+		@include tablet {
+			display:none;
+		}
+	}
+
+	.footer-branding__name {
+		margin-left:3rem;
+		width:30%;
+		float:left;
+
+		@include tablet {
+			float:none;
+			width:70%;
+			display:block;
+			margin:1rem auto;
+		}
+		@include mobile {
+			width:90%;
+		}
+		div {
+			font-family:$shade;
+			color:$mainBlue;
+			font-size:4rem;
+			padding:0 .5rem;
+
+			&:last-child {
+				text-align:right;
+			}
+
+		}
+		.hairline {
+			font-family:$hairline;
+			color:$mainBlue;
+			display:inline-block;
+			font-size:3.5rem;
+		}
+		.footer-wave_line {
+			margin-top:-3rem;
+			height:65px;
+		}
+	}
+
+	.footer-branding__social-media {
+		float:right;
+		width:30%;
+		padding-top:3rem;
+
+		@include tablet {
+			float:none;
+			display:block;
+			padding-top:0;
+			margin:1rem auto;
+			width:90%;
+		}
+
+		.social-title {
+			font-weight:700;
+			font-size:1.5rem;
+			padding:1rem;
+			color:$mainBlue;
+			display:block;
+			text-align:center;
+			text-transform:capitalize;
+
+			@include mobile {
+				font-size:1.2rem;
+			}
+		}
+		.icons {
+			color:$mainBlue;
+			text-align:center;
+			
+			i {
+				font-size:1.8rem;
+				background:$pink;
+				margin:.5rem 1rem;
+				border:solid 2px $mainBlue;
+				border-radius:50%;
+				width:50px;
+				height:50px;
+				padding-top:.5rem;
+				display:inline-block;
+				transition:all .3s ease-out;
+				-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+				-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+				box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+
+				&:hover {
+					background:#fff;
+					color:$pink;
+					border:solid 2px $pink;
+					transform:rotate(180deg);
+				}
+
+				@include mobile {
+					margin:1rem;
+				}
+
+			}
+		}
+	}
+ }
+
