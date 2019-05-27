@@ -29,15 +29,15 @@ body.archive {
 * Single Portfolio Item Page
 **********************************/
 .single-page-header {
-	height:800px;
+	height:700px;
 	background:#000;
 	width:95%;
+	max-width: 2000px;
 	margin: 0 auto;
 	margin-bottom: -15rem;
-	background-attachment: fixed !important;
 	background-position: 0 0 !important;
 	background-repeat: no-repeat !important;
-	background-size: cover !important;
+	background-size: 100% !important;
 	overflow:hidden;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 79%);
 	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 79%);
@@ -51,14 +51,26 @@ body.single {
 
 }
 
-.work {
-	max-width: 1600px;
+.interior-content {
+	max-width: 1800px;
 	margin:0 auto;
 	background: #fff;
-	padding: 4rem 1rem 6rem 1rem;
-	display:flex;
-	flex-direction: row nowrap;
+	padding: 1rem 2rem 6rem 2rem;
 	@include dropshadow();
+}
+.title {
+	margin-bottom:1rem;
+	@include gothic();
+	font-size: 2rem;
+	flex-grow: 1;
+	margin-bottom: 1rem;
+	line-height: 1;
+}
+
+.work {
+		display:flex;
+	flex-direction: row nowrap;
+
 
 	@include mobile {
 		flex-direction:column;
@@ -67,8 +79,8 @@ body.single {
 	}
 
 	.work-img {
-		max-width:40%;
-		margin-left:2rem;
+		max-width: calc(50% - 1rem);
+		margin: .5rem;
 		transition:all .6s ease-out;
 		padding:.5rem;
 		border: solid thin $drkGray;
@@ -95,11 +107,7 @@ body.single {
 			padding:0;
 		}
 
-		.title {
-			margin-bottom:1rem;
-			@include gothic();
-			font-size: 2rem;
-		}
+
 		.description {
 			padding:1rem 0;
 

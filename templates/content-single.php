@@ -24,16 +24,20 @@ if($imgwidth < 800) {
     </div>
 
     <div class="interior-content">
+
+      <div class="title">
+        <h2><?php the_title(); ?></h2>
+      </div>
+
       <div class="work">
+
         <div class="work-img">
           <a href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php echo get_the_post_thumbnail_caption(); ?>" rel="<?php echo get_the_title() .' project images'; ?>" data-lightbox="gallery">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_the_title().' image';  ?>" />
         </a>
         </div>
         <div class="work-details">
-          <div class="title">
-            <h2><?php the_title(); ?></h2>
-          </div>
+
 
           <div class="description">
             <?php
