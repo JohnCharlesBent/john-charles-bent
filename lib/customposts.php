@@ -50,7 +50,7 @@ register_post_type( 'art', $args );
 
 $args = array(
   		'labels'	=>	array(
-  			'name'			=> _x('Design | Dev', 'post type general name'),
+  			'name'			=> _x('Design', 'post type general name'),
   			'singular name' => _x('Design', 'post type singular name'),
   			'add_new'		=> _x('Add New', 'Design'),
   			'add_new_item'	=> __('Add Work'),
@@ -68,6 +68,27 @@ $args = array(
   'has_archive'   => true
 );
 register_post_type( 'design', $args );
+
+$args = array(
+  		'labels'	=>	array(
+  			'name'			=> _x('Web Development', 'post type general name'),
+  			'singular name' => _x('Web Development', 'post type singular name'),
+  			'add_new'		=> _x('Add New', 'Web Development'),
+  			'add_new_item'	=> __('Add Work'),
+  			'edit_item'		=> __('Edit Work'),
+  			'new_item'		=> __('New Web Development Project'),
+  			'view_item'		=> __('View Web Development Project'),
+  			'search_item'	=> __('Search Web Development'),
+  			'not_found'		=> __('No Web Development Project Was Found'),
+  			'not_found_in_trash'	=> __('Nothing Found In Trash'),
+  			'parent_item_color'	=> ''
+					),
+	'supports'			=>	array( 'title', 'editor', 'author', 'revisions', 'thumbnail', 'custom-fields' ),
+	'menu_position'	=>	7,
+	'public'				=>	true,
+  'has_archive'   => true
+);
+register_post_type( 'web-development', $args );
 
 // Comics Post Type
 
