@@ -1,20 +1,10 @@
 @import "common/variables";
-
-// Automatically injected Bower dependencies via wiredep (never manually edit this block)
-// bower:scss
-@import "../../bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
-
 // fonts
 @import url('https://fonts.googleapis.com/css?family=Bungee|Bungee+Hairline|Bungee+Inline|Bungee+Outline|Bungee+Shade');
 
 @import "common/global";
-@import "components/buttons";
-@import "components/comments";
 @import "components/forms";
 @import "layouts/gallery";
-@import "components/wp-classes";
-@import "components/animate";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
@@ -30,6 +20,8 @@
 html, body {
 	width:100%;
 	height:100%;
+	padding:0;
+	margin: 0;
 	font-family:'proxima-nova', 'Open Sans' ,'Helvetica', 'arial', sans-serif;
 }
 
@@ -43,6 +35,10 @@ a {
 }
 img {
 	width:100%;
+}
+ul {
+	margin: 0;
+	padding: 0;
 }
 .container {
 	padding-right:0 !important;
@@ -93,8 +89,6 @@ img {
 	@include mobile {
 		max-width:none;
 		width:90%;
-		
+
 	}
 }
-
-

@@ -7,13 +7,13 @@ $menu_args = array(
 ?>
 
 <header>
-	<div class="nav" style="background-image:url('<?php echo get_template_directory_uri().'/assets/images/az-subtle.png';?>');">
+	<div class="nav">
 		<div class="nav-logo">
 			<a href="<?php echo bloginfo('url'); ?>">
-				<?php get_template_part('templates/svg/logo'); ?>
+				<?php get_template_part('templates/svg/jb_logo'); ?>
 			</a>
 		</div>
-		
+
 		<div class="mobile-toggle">
 			MENU <i class="fa fa-bars" aria-hidden="true"></i>
 		</div><!-- end .mobile-toggle -->

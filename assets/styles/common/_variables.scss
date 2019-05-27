@@ -10,12 +10,15 @@ $mainBlue: #1d6a9e;
 $lightBlue: #84d3ef;
 $gold: #ccb21b;
 $lightYellow: #f4ebab;
-$salmon: #f7ab94;
+$salmon: #e0afa0;
 $orange: #e2641e;
 $adminBlue: #D9F0EE;
+$tan: #bcb8b1;
+$drkGray: #4e4b5c;
+$ltPurple: #bdadea;
 
 
-// Fonts 
+// Fonts
 $hairline:	'Bungee Hairline', 'Open Sans', sans-serif;
 $bungee:	'Bungee', 'Open Sans', sans-serif;
 $inline: 'Bungee Inline', 'Open Sans', sans-serif;
@@ -37,6 +40,11 @@ $tablet-landscape: "(max-width:1200px)";
 $mobile-phone: "(max-width:600px)";
 $laptop: "(max-width:1400px)";
 
+@mixin dropshadow() {
+  -webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
+  box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
+}
 
 
 @mixin tablet {
@@ -52,7 +60,7 @@ $laptop: "(max-width:1400px)";
 	@media #{$mobile-phone} {
 		@content;
 	}
-	
+
 }
 
 @mixin tablet-landscape {

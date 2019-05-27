@@ -19,20 +19,17 @@ header {
 	}
 
 	.nav {
-		background-color:$pink;
-		border-bottom:solid 3px $mainBlue;
+		/*background-color:$salmon;*/
 		position:relative;
-		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
 		transition:all .6 ease-in;
+		border-bottom: solid thin #000;
 
 		&:after {
 			content:"";
 			display:block;
 			clear:both;
 		}
-		
+
 		.menu {
 			text-align:center;
 			margin-bottom:0;
@@ -43,13 +40,12 @@ header {
 				padding:.5rem 1rem;
 				font-family:$hairline;
 				font-size:2rem;
-				color:#fff;
+				color:#000;
 				transition:all .3s ease-out;
 
 				&:hover {
 					@include background-opacity(#ffffff, .5);
 					color:$mainBlue;
-					font-family:$shade;
 					a {
 						text-decoration:none;
 					}
@@ -70,18 +66,18 @@ header {
 			position:absolute;
 			left:1rem;
 			z-index:1;
-			background:$lightBlue;
+			background: #fff;
 			border-radius:0 0 10px 10px;
-			border-bottom:solid thin $mainBlue;
-			border-left:solid thin $mainBlue;
-			border-right:solid thin $mainBlue;
-			-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-			-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-			box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+			border: solid thin $ltPurple;
+			border-top: solid thin $drkGray;
+			background: $drkGray;
+			-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
+			-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
+			box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.26);
 			z-index:101;
 
 			path {
-				fill:#fff;
+				fill:$ltPurple;
 			}
 
 			@include tablet-landscape {
@@ -124,12 +120,15 @@ header {
 		top:0;
 		left:0;
 		z-index:200;
+		background: #4e4b5c;
 		width:100%;
+		@include dropshadow();
 
 		.menu {
 			li {
 				padding:.25rem 1rem;
 				font-size:1.5rem;
+				color: #bdadea;
 			}
 		}
 	}
@@ -185,7 +184,7 @@ header {
 			transition:all .3s ease-in;
 			cursor:pointer;
 			&:hover {
-				
+
 				a {
 					color:#fff;
 				}

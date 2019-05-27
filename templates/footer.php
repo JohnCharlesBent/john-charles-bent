@@ -1,8 +1,4 @@
-<footer style="background-image:url('<?php echo get_template_directory_uri().'/assets/images/az-subtle.png';?>');">
-
-	<div class="ink_well">
-		<?php get_template_part('templates/svg/ink_bottle'); ?>
-	</div>
+<footer>
 
 	<div class="footer-branding__name">
 		<div>John</div>
@@ -20,12 +16,12 @@
 
 	<div class="footer-branding__social-media">
 		<div class="social-title">Stay Connected</div>
-		
+
 		<div class="icons">
 			<a href="<?php echo $email; ?>" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 			<a href="<?php echo $github; ?>" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 		</div>
-	
+
 	</div>
 
 </footer>
