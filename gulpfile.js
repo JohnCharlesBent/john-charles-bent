@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 gulp.task('minify-js', function() {
 	gulp.src('assets/scripts/*.js')
 	.pipe(minifyjs())
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('dist/scripts/'))
 	.pipe(browserSync.reload({
 		stream:true
 	}))

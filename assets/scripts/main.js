@@ -27,17 +27,19 @@
 
          $(window).on('scroll', function() {
             var scrollTop = $(this).scrollTop();
-
-            if(scrollTop >= 80) {
+            if(scrollTop >= 70) {
               $('.nav').addClass('sticky');
             } else {
               $('.nav').removeClass('sticky');
             }
-
           });
 
-        $('.grid-item:odd').addClass('fadeInLeftBig');
-        $('.grid-item:even').addClass('fadeInRightBig');
+        $(document).ready(function() {
+          setTimeout(function() {
+            $('body').addClass('loaded');
+            $('#modal-window').addClass('hidden');
+          }, 3000);
+        });
 
       },
       finalize: function() {
