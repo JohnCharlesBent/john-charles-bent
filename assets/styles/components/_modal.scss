@@ -1,0 +1,54 @@
+#modal-window {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: $drkGray;
+  z-index: 999999;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  .modal-logo {
+    width: calc(50% - 1rem);
+    margin: .5rem;
+    svg#jb_logo {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      g {
+        path {
+          fill: $ltPurple;
+          animation: fadeInOut 3s ease-in-out infinite;
+        }
+      }
+    }
+  }
+  .loading-message {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: $ltPurple;
+    animation: fadeInOut 3s ease-in-out infinite;
+  }
+}
+
+.modal-window.hidden {
+  display: none;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    color: $pink;
+    fill: $pink;
+  }
+  100% {
+    opacity: 0;
+  }
+}
