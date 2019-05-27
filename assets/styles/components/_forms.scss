@@ -1,1 +1,58 @@
+.contact-form__wrapper {
+  h2 {
+    @include gothic();
+    font-size: 2rem;
+    color: $drkGray;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .gform_body {
+    label.gfield_label {
+      @include gothic();
+      font-size: 2rem;
+      color: $drkGray;
+    }
+  }
 
+  li.gfield {
+    .ginput_container {
+      input[type="text"], textarea {
+        color: $ltPurple;
+      }
+    }
+  }
+
+  div.gfield_description {
+    font-size: 1.2rem;
+    color: $drkGray;
+  }
+
+  div.ginput_container_checkbox {
+    ul {
+      li {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        input[type="checkbox"] {
+          position: absolute;
+          cursor: pointer;
+          height: 25px;
+          width: 25px;
+        }
+        label {
+          @include gothic();
+          font-size: 1.5rem;
+          color: $drkGray;
+        }
+      }
+    }
+  }
+}

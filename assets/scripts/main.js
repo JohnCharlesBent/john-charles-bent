@@ -24,10 +24,10 @@
           $('.menu-overlay').toggle(200)
         });
 
-        
+
          $(window).on('scroll', function() {
             var scrollTop = $(this).scrollTop();
-            
+
             if(scrollTop >= 80) {
               $('.nav').addClass('sticky');
             } else {
@@ -35,34 +35,10 @@
             }
 
           });
-       
+
         $('.grid-item:odd').addClass('fadeInLeftBig');
         $('.grid-item:even').addClass('fadeInRightBig');
-       
-        var $grid = $('.grid');
 
-        $grid.outerWidth(true);
-
-        $(document).ready(function() {
-
-          $grid.imagesLoaded(function() {
-              $grid.isotope({
-                // set itemSelector so .grid-sizer is not used in layout
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                sortBy : 'original-order',
-                resize:true,
-                masonry: {
-                // set to the element
-                  columnWidth: '.grid-sizer'
-                  }
-              }).isotope('layout');
-          });
-
-
-        });
-
-          
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -77,7 +53,7 @@
 
          $(window).on('scroll', function() {
             var scrollTop = $(this).scrollTop();
-            
+
             if(scrollTop >= 80) {
               $('.nav').addClass('sticky');
             } else {

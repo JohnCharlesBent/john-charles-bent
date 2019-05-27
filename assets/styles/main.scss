@@ -69,20 +69,24 @@ ul {
 	max-width:250px;
 	margin-top:1rem !important;
 	margin:0 auto;
-	background:#fff;
-	color:$pink;
-	border:solid thin transparent;
-	transition:all .6s ease-out;
-	text-transform:uppercase;
+	background: transparent;
+	color:$ltPurple;
+	border: solid thin $ltPurple;
+	transition: all .6s ease-out;
+	text-transform: capitalize;
 	letter-spacing:1px;
 
 	&:hover {
-		background:$pink;
+		background:$ltPurple;
 		color:#fff;
 
 		a {
 			color:inherit;
 			text-decoration:none;
+
+			i {
+				margin-left: .15rem;
+			}
 		}
 	}
 

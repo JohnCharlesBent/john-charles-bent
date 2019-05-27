@@ -1,9 +1,22 @@
 <?php
 // Home Page
+
+$animation_options = array(
+	'fadeInLeftBig',
+	'fadeInRightBig',
+	'fadeIn',
+	'fadeInUpBig',
+	'zoomInLeft',
+	'fadeInDown',
+	'bounceIn',
+);
+
+$animOpt = array_rand($animation_options);
+
 ?>
-	<div class="grid">
+	<div class="grid animated <?php echo $animation_options[$animOpt]; ?>">
 		<div class="grid-sizer"></div>
-		<div class="grid-item logo animated fadeInLeftBig">
+		<div class="grid-item logo">
 			<div class="name">
 				<?php get_template_part('templates/svg/jb_logo'); ?>
 			</div>

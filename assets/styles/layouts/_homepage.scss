@@ -49,7 +49,7 @@
 	z-index:100;
 	position:relative;
 	border:solid 2px transparent;
-	transition:all .6s ease-in;
+	transition:all .3s ease-in-out;
 	border:solid thin $drkGray;
 
 	@include tablet-landscape {
@@ -59,9 +59,7 @@
 
 	&:hover {
 		border:solid 2px $ltPurple;
-		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+		@include dropshadow();
 		.overlay {
 			opacity:1;
 		}
