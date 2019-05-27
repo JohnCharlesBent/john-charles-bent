@@ -5,7 +5,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
 	align-content: space-around;
 	margin:2rem auto;
 	position:relative;
@@ -41,8 +41,8 @@
 
 
 .grid-item {
-	width:calc(33.33% - 2rem);
-	margin:1rem;
+	width:calc(33.33% - 1rem);
+	margin:.5rem;
 	padding:.25rem;
 	z-index:1;
 	background-color:#fff;
@@ -58,7 +58,6 @@
 
 
 	&:hover {
-		border:solid 2px $ltPurple;
 		@include dropshadow();
 		.overlay {
 			opacity:1;

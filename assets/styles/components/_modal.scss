@@ -6,33 +6,37 @@
   right: 0;
   height: 100vh;
   background: $drkGray;
+  color: $ltPurple;
   z-index: 999999;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
-  .modal-logo {
-    width: calc(50% - 1rem);
-    margin: .5rem;
-    svg#jb_logo {
-      display: block;
-      max-width: 600px;
-      margin: 0 auto;
-      g {
-        path {
-          fill: $ltPurple;
-          animation: fadeInOut 3s ease-in-out infinite;
-        }
-      }
-    }
-  }
+
   .loading-message {
     font-size: 1.5rem;
     margin-top: 2rem;
     text-transform: uppercase;
     color: $ltPurple;
     animation: fadeInOut 3s ease-in-out infinite;
+  }
+}
+
+.modal-logo {
+  width: calc(50% - 1rem);
+  margin: .5rem;
+
+  svg#jb_logo {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    g {
+      path {
+        fill: $ltPurple;
+        animation: fadeInOut 3s ease-in-out infinite;
+      }
+    }
   }
 }
 

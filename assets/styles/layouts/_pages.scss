@@ -1,15 +1,15 @@
 .page-header {
-	
+
 	h1 {
 		letter-spacing:1px;
-		color:$lightBlue;
+		color:$drkGray;
 		border-radius:0 0px 10px 10px;
 		padding:1rem;
 		margin-top:2rem;
 		text-align:center;
 		text-transform:uppercase;
 		font-size:3rem;
-		font-family:$shade;
+		@include gothic();
 	}
 
 	@include mobile {
@@ -26,57 +26,39 @@ body.archive {
 
 }
 /**********************************
-* Single Portfolio Item Page 
+* Single Portfolio Item Page
 **********************************/
 .single-page-header {
-	height:500px;
+	height:800px;
 	background:#000;
-	width:100%;
-	min-width:100%;
-	background-size:100% !important;
+	width:95%;
+	margin: 0 auto;
+	margin-bottom: -15rem;
+	background-attachment: fixed !important;
+	background-position: 0 0 !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 	overflow:hidden;
-	position:relative;
-
-	.cover-title {
-		position:absolute;
-		left:0;
-		right:0;
-		margin-left:auto;
-		margin-right:auto;
-		bottom:0;
-		width:100%;
-		text-align:center;
-		color:#000;
-		@include background-opacity(#ffffff, 0.8);
-		padding:2rem;
-		h1 {
-			font-family:$shade;
-		}
-		.category {
-			font-size:2rem;
-			font-family:$hairline;
-			&:before {
-				content:"File Under: ";
-				display:inline-block;
-				margin-right:.5rem;
-			}
-		}
-	}
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 79%);
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 0 79%);
 
 	@include mobile {
 		display:none;
 	}
 }
 
+body.single {
 
+}
 
 .work {
-	width:95%;
+	max-width: 1600px;
 	margin:0 auto;
-	padding-top:4rem;
-	padding-bottom:2rem;
+	background: #fff;
+	padding: 4rem 1rem 6rem 1rem;
 	display:flex;
-	flex-direction: row;
+	flex-direction: row nowrap;
+	@include dropshadow();
 
 	@include mobile {
 		flex-direction:column;
@@ -89,6 +71,12 @@ body.archive {
 		margin-left:2rem;
 		transition:all .6s ease-out;
 		padding:.5rem;
+		border: solid thin $drkGray;
+		transition: all .3s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			@include dropshadow();
+		}
 
 		@include mobile {
 			width:100%;
@@ -109,8 +97,8 @@ body.archive {
 
 		.title {
 			margin-bottom:1rem;
-			font-family:$proximaNova;
-			color:$mainBlue;
+			@include gothic();
+			font-size: 2rem;
 		}
 		.description {
 			padding:1rem 0;

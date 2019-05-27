@@ -1,11 +1,11 @@
-<?php 
+<?php
 
-$type = get_post_type(); 
+$type = get_post_type();
 if($type == 'design'):
   $type = 'design & development';
 endif;
 
-while (have_posts()) : the_post(); 
+while (have_posts()) : the_post();
 
 $imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
 $imgurl = $imgdata[0]; // the url of the thumbnail picture
@@ -15,18 +15,14 @@ $imgheight = $imgdata[2]; // thumbnail's height
 if($imgwidth < 800) {
   $background = 'height:200px;';
 } else {
-  $background = 'background:url('. get_the_post_thumbnail_url().') no-repeat 20% 20% fixed;';
+  $background = 'background:url('. get_the_post_thumbnail_url().');';
 }
 
 ?>
 
    <div class="single-page-header" style="<?php echo $background; ?>">
-     <div class="cover-title">
-       <h1><?php the_title(); ?></h1>
-       <div class="category"><?php echo $type; ?></div>
-     </div>
     </div>
-   
+
     <div class="interior-content">
       <div class="work">
         <div class="work-img">
@@ -38,7 +34,7 @@ if($imgwidth < 800) {
           <div class="title">
             <h2><?php the_title(); ?></h2>
           </div>
-        
+
           <div class="description">
             <?php
               if(get_field('client') != ''):
@@ -69,7 +65,7 @@ if($imgwidth < 800) {
           <?php endif; ?>
             <?php the_content(); ?>
           </div>
-         
+
         <?php
         if(have_rows('skills')):
         ?>
@@ -128,4 +124,3 @@ if($imgwidth < 800) {
 
 <?php endwhile; ?>
 </div>
-
