@@ -1,8 +1,6 @@
 footer {
-	background:$adminBlue;
+	background:$drkBrown;
 	padding:2rem 4rem 4rem 4rem;
-	border-top:solid 3px $pink;
-	position:relative;
 
 	@include mobile {
 		padding:1rem 2rem;
@@ -14,41 +12,22 @@ footer {
 		clear:both;
 	}
 
-	.ink_well {
-		width:200px;
-		position:absolute;
-		background:$pink;
-		text-align:center;
-		padding:1rem;
-		border-radius:50%;
-		border:solid 3px $mainBlue;
-		left:0;
-		right:0;
-		margin-left:auto;
-		margin-right:auto;
-		top:-4rem;
-		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
-		transition:all .3s ease-out;
-
-		&:hover {
-			transform:rotate(180deg);
-		}
-
-		svg {
-			width:50%;
-
-		}
-		@include tablet {
-			display:none;
-		}
-	}
 
 	.footer-branding__name {
 		margin-left:3rem;
 		width:30%;
 		float:left;
+
+		svg#jb_logo {
+			max-width: 300px;
+			margin: 0 auto;
+			display: block;
+			g {
+				path{
+					fill: $drkGray;
+				}
+			}
+		}
 
 		@include tablet {
 			float:none;
@@ -59,26 +38,17 @@ footer {
 		@include mobile {
 			width:90%;
 		}
-		div {
-			font-family:$shade;
-			color:$mainBlue;
-			font-size:4rem;
-			padding:0 .5rem;
 
-			&:last-child {
-				text-align:right;
-			}
-
-		}
-		.hairline {
-			font-family:$hairline;
-			color:$mainBlue;
-			display:inline-block;
-			font-size:3.5rem;
-		}
 		.footer-wave_line {
-			margin-top:-3rem;
-			height:65px;
+			height:15px;
+			max-width: 300px;
+			display: block;
+			margin: 1rem auto;
+			#wave {
+				path {
+					fill: $drkGray;
+				}
+			}
 		}
 	}
 
@@ -111,7 +81,7 @@ footer {
 		.icons {
 			color:$mainBlue;
 			text-align:center;
-			
+
 			i {
 				font-size:1.8rem;
 				background:$pink;
@@ -142,4 +112,3 @@ footer {
 		}
 	}
  }
-

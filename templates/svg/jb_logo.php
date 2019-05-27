@@ -1,4 +1,4 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="jb_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 260.03 211.01" style="enable-background:new 0 0 260.03 211.01;" xml:space="preserve">
 <g>
 	<path d="M40.92,86.69c-3.05,4.04-8.76,4.04-11.22,4.13c-2.46,0.1-11.52-0.1-12.01-0.2c-0.69,0-0.98-0.2-1.48-0.69

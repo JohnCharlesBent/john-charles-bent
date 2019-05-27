@@ -1,11 +1,14 @@
 <footer>
 
 	<div class="footer-branding__name">
-		<div>John</div>
+
 			<div class="footer-wave_line">
 				<?php get_template_part('templates/svg/wave'); ?>
 			</div>
-		<div>Bent</div>
+			<?php get_template_part('templates/svg/jb_logo'); ?>
+			<div class="footer-wave_line">
+				<?php get_template_part('templates/svg/wave'); ?>
+			</div>
 	</div>
 
 	<?php

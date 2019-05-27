@@ -40,12 +40,11 @@ header {
 				padding:.5rem 1rem;
 				font-family:$hairline;
 				font-size:2rem;
-				color:#000;
+				color:$drkGray;
 				transition:all .3s ease-out;
 
 				&:hover {
-					@include background-opacity(#ffffff, .5);
-					color:$mainBlue;
+					color:$drkBrown;
 					a {
 						text-decoration:none;
 					}
@@ -97,7 +96,7 @@ header {
 			display:none;
 			font-size:2.5rem;
 			color:#fff;
-			font-family:$hairline;
+			@include gothic();
 			transition:all .6s ease-out;
 			padding:0 1rem;
 			cursor:pointer;

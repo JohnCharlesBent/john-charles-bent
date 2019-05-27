@@ -16,6 +16,7 @@ $adminBlue: #D9F0EE;
 $tan: #bcb8b1;
 $drkGray: #4e4b5c;
 $ltPurple: #bdadea;
+$drkBrown: #2d1115;
 
 
 // Fonts
@@ -28,6 +29,13 @@ $openSans: 'Open Sans', sans-serif;
 $proximaNova : 'proxima-nova', sans-serif;
 
 // Mixins
+
+@mixin gothic() {
+  font-family: gothic-open-shaded, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @mixin background-opacity($color, $opacity: 0.3) {
     background: $color; /* The Fallback */
     background: rgba($color, $opacity);
