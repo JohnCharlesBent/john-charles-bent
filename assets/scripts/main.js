@@ -25,6 +25,7 @@
         });
 
 
+
          $(window).on('scroll', function() {
             var scrollTop = $(this).scrollTop();
             if(scrollTop >= 70) {
@@ -34,11 +35,11 @@
             }
           });
 
-        $(document).ready(function() {
+        $(window).load(function() {
           setTimeout(function() {
             $('body').addClass('loaded');
-            $('#modal-window').addClass('hidden');
-          }, 3000);
+            $('#modal-window').slideUp(200);
+          }, 1000);
         });
 
       },

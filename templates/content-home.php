@@ -1,20 +1,7 @@
 <?php
 // Home Page
-
-$animation_options = array(
-	'fadeInLeftBig',
-	'fadeInRightBig',
-	'fadeIn',
-	'fadeInUpBig',
-	'zoomInLeft',
-	'fadeInDown',
-	'bounceIn',
-);
-
-$animOpt = array_rand($animation_options);
-
 ?>
-	<div class="grid animated <?php echo $animation_options[$animOpt]; ?>">
+	<div class="grid">
 		<div class="grid-sizer"></div>
 		<div class="grid-item logo">
 			<div class="name">
