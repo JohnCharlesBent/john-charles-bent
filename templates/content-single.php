@@ -101,11 +101,6 @@ if($imgwidth < 800) {
       <div class="work-gallery__wrapper">
         <h2>Project Images</h2>
         <ul class="related_images">
-          <li>
-             <a href="<?php echo get_the_post_thumbnail_url(); ?>" data-title="<?php echo get_the_post_thumbnail_caption(); ?>" rel="<?php echo get_the_title() .' project images'; ?>" data-lightbox="gallery">
-                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo $alt; ?>" />
-            </a>
-           </li>
       <?php
       foreach($project_images as $img):
       ?>
