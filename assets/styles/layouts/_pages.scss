@@ -46,7 +46,9 @@ body.archive {
 }
 
 body.single {
-
+	.interior-content {
+		display: block;
+	}
 }
 
 .interior-content {
