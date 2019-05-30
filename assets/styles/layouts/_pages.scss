@@ -105,7 +105,6 @@ body.single {
 	.work-details {
 		padding:0 2rem;
 		width: calc(50% - 1rem);
-		margin: .5rem 1rem;
 		@include mobile {
 			display:block;
 			width:90%;
@@ -117,11 +116,24 @@ body.single {
 		.description {
 			padding:1rem 0;
 			font-size: 1.2rem;
-
 			.details {
 					color:$drkGray;
 					font-size: .9rem;
 					display:inline-block;
+					margin: .25rem;
+					transition: all .3s ease-in-out;
+					padding: .5rem 1rem;
+					border-radius: 26px;
+					border: solid thin $drkGray;
+
+					&:hover {
+						border: solid thin transparent;
+						background: $drkGray;
+						a {
+							color: $ltPurple;
+						}
+					}
+
 					i {
 						margin-right:.25rem;
 					}
@@ -131,6 +143,12 @@ body.single {
 							content:"";
 						}
 					}
+			}
+
+			.client.details {
+				background: transparent;
+				border: solid thin transparent;
+				padding: .5rem 0;
 			}
 		}
 
