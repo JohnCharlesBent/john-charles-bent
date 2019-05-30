@@ -73,8 +73,7 @@ ul {
 	color:$ltPurple;
 	border: solid thin $ltPurple;
 	transition: all .6s ease-out;
-	text-transform: capitalize;
-	letter-spacing:1px;
+	text-transform: uppercase;
 
 	&:hover {
 		background:$ltPurple;
