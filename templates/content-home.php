@@ -33,13 +33,6 @@
 		?>
 	</div>
 
-	<div class="email-signup__wrapper" style="background:url('<?php echo get_template_directory_uri().'/assets/images/main_img.jpg'; ?>') no-repeat center center fixed;">
-		<div class="overlay"></div>
-
-			<div class="contact-form__wrapper">
-				<h2>Work With Me!</h2>
-				<p>I'm always looking for new projects. If you like my work and have a need for freelance or contract work, please use the form below to reach out!</p>
-				<?php gravity_form(1, false, false, false); ?>
-			</div>
-
+	<div class="about">
+		<?php get_template_part('templates/about'); ?>
 	</div>

@@ -1,5 +1,5 @@
 footer {
-	background:$drkBrown;
+	background:$drkGray;
 	padding:2rem 4rem 4rem 4rem;
 
 	@include mobile {
@@ -24,7 +24,7 @@ footer {
 			display: block;
 			g {
 				path{
-					fill: $drkGray;
+					fill: $ltPurple;
 				}
 			}
 		}

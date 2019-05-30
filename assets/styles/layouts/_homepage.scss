@@ -218,3 +218,49 @@
 		}
 	}
 }
+
+.about {
+	background: $ltPurple;
+	-webkit-clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0% 100%);
+
+	.interior-content {
+		background: $ltPurple;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto !important;
+
+		h2 {
+			color: $drkGray;
+			@include gothic();
+			font-size: 3rem;
+			text-align: center;
+			padding-top: 3rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+		.email_btn {
+
+			a {
+				color: $drkGray;
+				border: solid thin $drkGray;
+				font-size: 2rem;
+				display: block;
+				min-width: 500px;
+				padding: .5rem 1rem;
+				border-radius: 36px;
+				text-align: center;
+				transition: all .3s ease-in-out;
+
+				&:hover {
+					background: $drkGray;
+					color: $ltPurple;
+				}
+			}
+		}
+	}
+
+}

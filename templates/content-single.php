@@ -27,6 +27,7 @@ if($imgwidth < 800) {
 
       <div class="title">
         <h2><?php the_title(); ?></h2>
+        <?php get_template_part('templates/svg/wave'); ?>
       </div>
 
       <div class="work">
