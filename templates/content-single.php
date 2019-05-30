@@ -20,9 +20,6 @@ if($imgwidth < 800) {
 
 ?>
 
-   <div class="single-page-header" style="<?php echo $background; ?>">
-    </div>
-
     <div class="interior-content">
 
       <div class="title">
@@ -38,8 +35,6 @@ if($imgwidth < 800) {
         </a>
         </div>
         <div class="work-details">
-
-
           <div class="description">
             <?php
               if(get_field('client') != ''):
@@ -71,28 +66,29 @@ if($imgwidth < 800) {
             <?php the_content(); ?>
           </div>
 
-        <?php
-        if(have_rows('skills')):
-        ?>
-          <div class="skills-list">
-              <strong>Skills Applied:</strong>
-                <div class="skills">
-                <?php
-                  while(have_rows('skills')) : the_row();
-                ?>
-                  <span class="skill">
-                    <?php echo get_sub_field('skill'); ?>
-                  </span>
-                <?php
-                  endwhile;
-                ?>
-             </div>
-          </div>
-           <?php
-            endif;
-           ?>
         </div><!-- End .work-details -->
       </div>
+
+      <?php
+      if(have_rows('skills')):
+      ?>
+        <div class="skills-list">
+            <strong>Skills Applied:</strong>
+              <div class="skills">
+              <?php
+                while(have_rows('skills')) : the_row();
+              ?>
+                <span class="skill">
+                  <?php echo get_sub_field('skill'); ?>
+                </span>
+              <?php
+                endwhile;
+              ?>
+           </div>
+        </div>
+         <?php
+          endif;
+        ?>
 
       <?php
       $project_images = get_field('related_images');

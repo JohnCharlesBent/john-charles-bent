@@ -1,14 +1,12 @@
 .page-header {
-
 	h1 {
-		letter-spacing:1px;
 		color:$drkGray;
-		border-radius:0 0px 10px 10px;
 		padding:1rem;
 		margin-top:2rem;
+		margin-bottom: 1rem;
 		text-align:center;
 		text-transform:uppercase;
-		font-size:3rem;
+		font-size:4rem;
 		@include gothic();
 	}
 
@@ -67,7 +65,7 @@ body.single {
 	color: $drkGray;
 
 	svg#wave {
-		max-width: 50%;
+		max-width: 100%;
 		margin-top: -1rem;
 		display: block;
 		g {
@@ -79,7 +77,7 @@ body.single {
 }
 
 .work {
-		display:flex;
+	display:flex;
 	flex-direction: row nowrap;
 
 
@@ -92,15 +90,9 @@ body.single {
 	.work-img {
 		max-width: calc(50% - 1rem);
 		margin: .5rem;
-		transition:all .6s ease-out;
-		padding:.5rem;
-		border: solid thin $drkGray;
 		transition: all .3s ease-in-out;
 		cursor: pointer;
-		&:hover {
-			@include dropshadow();
-		}
-
+		max-width: 600px;
 		@include mobile {
 			width:100%;
 			margin:1rem auto;
@@ -110,7 +102,8 @@ body.single {
 
 	.work-details {
 		padding:0 2rem;
-
+		width: calc(50% - 1rem);
+		margin: .5rem;
 		@include mobile {
 			display:block;
 			width:90%;
@@ -121,19 +114,13 @@ body.single {
 
 		.description {
 			padding:1rem 0;
+			font-size: 1.2rem;
 
 			.details {
-					color:$mainBlue;
-					font-size:.9rem;
+					color:$drkGray;
+					font-size: .9rem;
 					display:inline-block;
 					i {
-						margin-right:.25rem;
-					}
-
-					&:after {
-						content:"|";
-						display:inline-block;
-						margin-left:.25rem;
 						margin-right:.25rem;
 					}
 
@@ -144,34 +131,37 @@ body.single {
 					}
 			}
 		}
-		.skills-list {
-			padding:2rem 1rem;
-			strong {
-				color:$pink;
-			}
-		}
-		.skills {
-			display:flex;
-			padding:1rem 0rem;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-			align-items: center;
-			align-content: space-around;
 
-			span {
-				padding:.5rem 1rem .5rem 1rem;
-				border-radius:4px;
-				text-align:center;
-				color:$mainBlue;
-				background:#eee;
-				margin-bottom:1rem;
-				margin-right:1rem;
-				display:inline-block;
-				font-size:.9rem;
-				font-style:italic;
-			}
-		}
 
+
+	}
+}
+
+.skills-list {
+	padding:2rem 0rem;
+	strong {
+		color:$drkGray;
+		font-size: 2rem;
+		@include gothic();
+	}
+}
+.skills {
+	display:flex;
+	padding:1rem 0rem;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-around;
+
+	span {
+		padding:.5rem 1rem .5rem 1rem;
+		border-radius:4px;
+		text-align:center;
+		color:$drkGray;
+		background:#eee;
+		margin-bottom:1rem;
+		margin-right:1rem;
+		display:inline-block;
 	}
 }
 
@@ -180,15 +170,15 @@ body.single {
 **********************************************/
 
 .work-gallery__wrapper {
-	width:90%;
 	margin:0 auto;
-	padding-top:1rem;
-	padding-bottom:1rem;
-	border-top:solid 3px $lightBlue;
+	padding: 2rem;
+	background: #eee;
+	border-radius: 6px;
+	margin-top: 1rem;
 
 	h2 {
-		font-family:$proximaNova;
-		color:$mainBlue;
+		@include gothic();
+		color:$drkGray;
 	}
 
 	ul.related_images {
@@ -212,7 +202,7 @@ body.single {
 		 	padding:.5rem;
 		 	cursor:pointer;
 		 	transition:all .6s ease-out;
-		 	border:solid thin $adminBlue;
+		 	border:solid thin transparent;
 
 		 	@include mobile {
 		 		width:90%;
@@ -223,6 +213,7 @@ body.single {
 		 		-webkit-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
 				-moz-box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
 				box-shadow: 0px 18px 14px -6px rgba(0,0,0,0.56);
+				border: solid thin $drkGray;
 		 	}
 
 
