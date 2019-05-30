@@ -18,7 +18,7 @@ $message = array_rand($loadMessage);
 ?>
 
  <div id="modal-window" class="hidden">
-   <div class="modal-logo" class="hidden">
+   <div class="modal-logo">
      <?php get_template_part('templates/svg/jb_logo'); ?>
    </div>
    <div class="loading-message"><?php echo $loadMessage[$message]; ?></div>

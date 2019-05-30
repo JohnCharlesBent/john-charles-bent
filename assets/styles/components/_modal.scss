@@ -15,9 +15,12 @@
 
 
   .loading-message {
+    max-width: 600px;
+    width: calc(50% - 1rem);
     font-size: 1.5rem;
     margin-top: 2rem;
     text-transform: uppercase;
+    text-align: center;
     color: $ltPurple;
     animation: fadeInOut 3s ease-in-out infinite;
   }

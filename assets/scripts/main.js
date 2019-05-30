@@ -35,7 +35,7 @@
             }
           });
 
-        $(window).load(function() {
+        $(document).ready(function() {
           setTimeout(function() {
             $('body').addClass('loaded');
             $('#modal-window').slideUp(200);
