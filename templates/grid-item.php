@@ -13,7 +13,7 @@ $featured_title = get_the_title();
 		</div>
 	<?php if(is_front_page()): ?>
 		<div class="post_type">
-			Tag: <?php echo $post_type; ?>
+			Tag: <?php echo str_replace('-', ' ',$post_type); ?>
 		</div>
 	<?php endif;?>
 		<div class="btn">
