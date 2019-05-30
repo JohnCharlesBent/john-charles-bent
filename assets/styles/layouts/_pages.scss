@@ -103,7 +103,7 @@ body.single {
 	.work-details {
 		padding:0 2rem;
 		width: calc(50% - 1rem);
-		margin: .5rem;
+		margin: .5rem 1rem;
 		@include mobile {
 			display:block;
 			width:90%;
@@ -179,6 +179,7 @@ body.single {
 	h2 {
 		@include gothic();
 		color:$drkGray;
+		font-size: 2rem;
 	}
 
 	ul.related_images {
