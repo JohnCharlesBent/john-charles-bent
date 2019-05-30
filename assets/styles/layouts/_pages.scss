@@ -150,6 +150,12 @@ body.single {
 				border: solid thin transparent;
 				padding: .5rem 0;
 			}
+
+			p {
+				a {
+					color: $pink;
+				}
+			}
 		}
 
 
