@@ -59,7 +59,7 @@ if($imgwidth < 800) {
             ?>
               <div class="github_repo details">
                 <a href="<?php echo get_field('github_repo'); ?>" target="_blank">
-                  <i class="fa fa-github" aria-hidden="true"></i> View Github Repo
+                  <i class="fa fa-github" aria-hidden="true"></i> View Code on Github
                 </a>
               </div>
           <?php endif; ?>
