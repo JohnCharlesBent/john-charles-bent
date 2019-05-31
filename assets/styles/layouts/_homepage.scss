@@ -42,12 +42,12 @@
 
 .grid-item {
 	width:calc(33.33% - 1rem);
-	margin:.5rem;
+	margin:.25rem;
 	z-index:1;
 	background-color:#fff;
 	z-index:100;
 	position:relative;
-	border:solid 2px transparent;
+	border:solid thin transparent;
 	transition:all .3s ease-in-out;
 
 	@include tablet-landscape {
