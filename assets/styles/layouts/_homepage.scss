@@ -49,7 +49,6 @@
 	position:relative;
 	border:solid 2px transparent;
 	transition:all .3s ease-in-out;
-	border:solid thin $drkGray;
 
 	@include tablet-landscape {
 		width:calc(50% - 2rem);
