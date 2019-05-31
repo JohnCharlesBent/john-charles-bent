@@ -8,7 +8,7 @@ $loadMessage = array(
   'Setting phasers to stun...',
   'Are you the keymaster? I\'m the gatekeeper...',
   'Putting on my frip and finery. One sec...',
-  'Fables of the Reconstruction is the best R.E.M album. Change my mind.',
+  'Fables of the Reconstruction is the best R.E.M. album. Change my mind.',
   'Rock Lobster. Wahooooo...',
   'Waxing my mustache. Be there soon.'
 );
